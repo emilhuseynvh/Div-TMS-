@@ -1,9 +1,9 @@
 const express = require('express');
-const config = require('./src/config');
-require('./src/config/database');
-const router = require('./src/routes');
+const config = require('./config');
+require('./config/database');
+const router = require('./routes');
 const cors = require('cors');
-const errorMiddleware = require('./src/middleware/error.middleware');
+const errorMiddleware = require('./middleware/error.middleware');
 
 const app = express();
 app.use(express.json());
